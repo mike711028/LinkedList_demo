@@ -14,7 +14,7 @@ public:
 	node *tail_ptr = NULL;
 
 	// default value with all NULL
-	// have to declare this at the beginning in main func
+	// have to declare this as "head pointer" at the beginning in main func
 	node();
 
 	// create a new node for operation(Pushback, PopFront...)

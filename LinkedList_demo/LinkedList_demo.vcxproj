@@ -20,7 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="demo.cpp" />
+    <ClCompile Include="ListArray.cpp" />
     <ClCompile Include="node.cpp" />
+    <ClCompile Include="PopFront.cpp" />
+    <ClCompile Include="PushFront.cpp" />
+    <ClCompile Include="TopFront.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="node.h" />
@@ -95,6 +99,9 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

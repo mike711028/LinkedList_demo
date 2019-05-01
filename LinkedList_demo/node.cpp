@@ -3,6 +3,7 @@
 
 
 /*      default node        */
+
 node::node()
 {
 	this->node_key_ = NULL;
@@ -42,59 +43,60 @@ node * node::GetNodeNext()
 }
 
 /*        Front Operation         */
-void node::PushFront(int key)
-{
-	// it's an empty list 
-	if (head_ptr == NULL)
-	{
-		this->SetNodeKey(key);
-		head_ptr = this;
-		tail_ptr = this;
-	}
-	// there are values in the list
-	else
-	{
-		node *new_node = new node(key);
 
-		new_node->SetNodeNext(head_ptr);
+//void node::PushFront(int key)
+//{
+//	// it's an empty list 
+//	if (head_ptr == NULL)
+//	{
+//		this->SetNodeKey(key);
+//		head_ptr = this;
+//		tail_ptr = this;
+//	}
+//	// there are values in the list
+//	else
+//	{
+//		node *new_node = new node(key);
+//
+//		new_node->SetNodeNext(head_ptr);
+//
+//		head_ptr = new_node;
+//		
+//	}
+//}
 
-		head_ptr = new_node;
-		
-	}
-}
+//int node::TopFront()
+//{
+//	if (head_ptr == NULL)
+//	{
+//		std::cout << "It's an empty list" << std::endl;
+//		return 0;
+//	}
+//	else
+//	{
+//		return head_ptr->GetNodeKey();
+//	}
+//	
+//}
 
-int node::TopFront()
-{
-	if (head_ptr == NULL)
-	{
-		std::cout << "It's an empty list" << std::endl;
-		return 0;
-	}
-	else
-	{
-		return head_ptr->GetNodeKey();
-	}
-	
-}
-
-void node::PopFront()
-{
-	if (head_ptr == NULL)
-	{
-		std::cout << "It's an empty list" << std::endl;
-	}
-	// when there is a one element inside, will error
-	else
-	{
-
-		// copy the address of the head_ptr
-		node *temp = head_ptr;
-		// make head_ptr point to the new first node
-		head_ptr = head_ptr->GetNodeNext();
-		// delete the old first node
-		delete temp;
-	}
-}
+//void node::PopFront()
+//{
+//	if (head_ptr == NULL)
+//	{
+//		std::cout << "It's an empty list" << std::endl;
+//	}
+//	// when there is a one element inside, will error
+//	else
+//	{
+//
+//		// copy the address of the head_ptr
+//		node *temp = head_ptr;
+//		// make head_ptr point to the new first node
+//		head_ptr = head_ptr->GetNodeNext();
+//		// delete the old first node
+//		delete temp;
+//	}
+//}
 
 /*          Back Operation       */
 
@@ -169,19 +171,19 @@ void node::PopBack()
 }
 
 /*         List Array                */
-void node::ListArray()
-{
-	if (head_ptr == NULL)
-	{
-		std::cout << "It's an empty list" << std::endl;
-	}
-	else
-	{
-		std::cout << "The array is [ ";
-		for (node *ptr = head_ptr; ptr != NULL; ptr = ptr->GetNodeNext())
-		{
-			std::cout << ptr->GetNodeKey() << " ";
-		}
-		std::cout << "]" << std::endl;
-	}
-}
+//void node::ListArray()
+//{
+//	if (head_ptr == NULL)
+//	{
+//		std::cout << "It's an empty list" << std::endl;
+//	}
+//	else
+//	{
+//		std::cout << "The array is [ ";
+//		for (node *ptr = head_ptr; ptr != NULL; ptr = ptr->GetNodeNext())
+//		{
+//			std::cout << ptr->GetNodeKey() << " ";
+//		}
+//		std::cout << "]" << std::endl;
+//	}
+//}
