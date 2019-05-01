@@ -22,8 +22,11 @@
     <ClCompile Include="demo.cpp" />
     <ClCompile Include="ListArray.cpp" />
     <ClCompile Include="node.cpp" />
+    <ClCompile Include="PopBack.cpp" />
     <ClCompile Include="PopFront.cpp" />
+    <ClCompile Include="PushBack.cpp" />
     <ClCompile Include="PushFront.cpp" />
+    <ClCompile Include="TopBack.cpp" />
     <ClCompile Include="TopFront.cpp" />
   </ItemGroup>
   <ItemGroup>

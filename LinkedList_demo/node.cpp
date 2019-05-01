@@ -100,75 +100,75 @@ node * node::GetNodeNext()
 
 /*          Back Operation       */
 
-void node::PushBack(int key)
-{
-	// if it is an empty list
-	if (head_ptr == NULL)
-	{
-		// Set new node as the first element
-		this->SetNodeKey(key);
-		head_ptr = this;
-		tail_ptr = this;
-	}
-	else
-	{
-		node *new_node = new node(key);
-		// the old last node points to the new last node
-		tail_ptr->SetNodeNext(new_node);
-		// tial_ptr points to the new last node(new_node)
-		tail_ptr = new_node;
-	}
-}
+//void node::PushBack(int key)
+//{
+//	// if it is an empty list
+//	if (head_ptr == NULL)
+//	{
+//		// Set new node as the first element
+//		this->SetNodeKey(key);
+//		head_ptr = this;
+//		tail_ptr = this;
+//	}
+//	else
+//	{
+//		node *new_node = new node(key);
+//		// the old last node points to the new last node
+//		tail_ptr->SetNodeNext(new_node);
+//		// tial_ptr points to the new last node(new_node)
+//		tail_ptr = new_node;
+//	}
+//}
 
-int node::TopBack()
-{
-	if (head_ptr == NULL)
-	{
-		std::cout << "It's an empty list" << std::endl;
-		return 0;
-	}
-	else
-	{
-		return tail_ptr->GetNodeKey();
-	}
-	
-}
+//int node::TopBack()
+//{
+//	if (head_ptr == NULL)
+//	{
+//		std::cout << "It's an empty list" << std::endl;
+//		return 0;
+//	}
+//	else
+//	{
+//		return tail_ptr->GetNodeKey();
+//	}
+//	
+//}
 
-void node::PopBack()
-{
-	if (head_ptr == NULL)
-	{
-		std::cout << "It's an empty list" << std::endl;
-	}
-	else
-	{
-		// search for the new last node, from the beginning
-		for (node *ptr = head_ptr, *next_ptr = head_ptr->GetNodeNext(); ptr != NULL; ptr = ptr->GetNodeNext())
-		{
-			if (next_ptr->GetNodeNext() == NULL)
-			{
-				this ->tail_ptr = ptr;
-				tail_ptr->SetNodeNext(NULL);
-				delete next_ptr;
-				break;
-			}
-			next_ptr = next_ptr->GetNodeNext();
-		}
-
-		//// search for the new last node, from the beginning
-		//for (node *ptr = head_ptr; ptr != NULL; ptr = ptr->GetNodeNext())
-		//{
-		//	node* next_ptr = ptr->GetNodeNext();
-		//	if (next_ptr->GetNodeNext() == NULL)
-		//	{
-		//		tail_ptr = ptr;
-		//		tail_ptr->SetNodeNext(NULL);
-		//		delete next_ptr;
-		//		break;
-		//	}
-		//}
-	}
-}
+//void node::PopBack()
+//{
+//	if (head_ptr == NULL)
+//	{
+//		std::cout << "It's an empty list" << std::endl;
+//	}
+//	else
+//	{
+//		// search for the new last node, from the beginning
+//		for (node *ptr = head_ptr, *next_ptr = head_ptr->GetNodeNext(); ptr != NULL; ptr = ptr->GetNodeNext())
+//		{
+//			if (next_ptr->GetNodeNext() == NULL)
+//			{
+//				this ->tail_ptr = ptr;
+//				tail_ptr->SetNodeNext(NULL);
+//				delete next_ptr;
+//				break;
+//			}
+//			next_ptr = next_ptr->GetNodeNext();
+//		}
+//
+//		//// search for the new last node, from the beginning
+//		//for (node *ptr = head_ptr; ptr != NULL; ptr = ptr->GetNodeNext())
+//		//{
+//		//	node* next_ptr = ptr->GetNodeNext();
+//		//	if (next_ptr->GetNodeNext() == NULL)
+//		//	{
+//		//		tail_ptr = ptr;
+//		//		tail_ptr->SetNodeNext(NULL);
+//		//		delete next_ptr;
+//		//		break;
+//		//	}
+//		//}
+//	}
+//}
 
 /*         List Array                */
 //void node::ListArray()

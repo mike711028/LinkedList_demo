@@ -33,6 +33,15 @@
     <ClCompile Include="PopFront.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="PushBack.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="TopBack.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="PopBack.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="node.h">
