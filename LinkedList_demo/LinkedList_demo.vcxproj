@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="demo.cpp" />
+    <ClCompile Include="FindValue.cpp" />
     <ClCompile Include="ListArray.cpp" />
     <ClCompile Include="node.cpp" />
     <ClCompile Include="PopBack.cpp" />

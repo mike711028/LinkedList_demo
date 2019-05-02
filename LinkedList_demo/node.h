@@ -45,6 +45,10 @@ public:
 	int TopBack();
 	void PopBack();
 
+	/*    Find Value     */
+
+	bool FindValue(int key);
+
 	/*    List Array    */
 	void ListArray();
 

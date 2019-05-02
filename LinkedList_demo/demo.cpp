@@ -13,15 +13,8 @@ int main()
 
 	head_ptr->ListArray();
 
-	for (int i = 0; i < 5; i++)
-	{
-		head_ptr->PopBack();
-	}
-
-	std::cout << head_ptr->GetNodeNext() << std::endl;
-	std::cout << head_ptr->tail_ptr << std::endl;
-
-	head_ptr->ListArray();
+	head_ptr->FindValue(100);
+	
 
 
 
