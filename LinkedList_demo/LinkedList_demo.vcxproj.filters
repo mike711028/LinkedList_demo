@@ -45,6 +45,12 @@
     <ClCompile Include="FindValue.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="Erase.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Empty.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="node.h">

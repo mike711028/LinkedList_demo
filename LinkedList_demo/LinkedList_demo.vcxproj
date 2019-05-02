@@ -20,6 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="demo.cpp" />
+    <ClCompile Include="Empty.cpp" />
+    <ClCompile Include="Erase.cpp" />
     <ClCompile Include="FindValue.cpp" />
     <ClCompile Include="ListArray.cpp" />
     <ClCompile Include="node.cpp" />

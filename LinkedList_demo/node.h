@@ -48,9 +48,16 @@ public:
 	/*    Find Value     */
 
 	bool FindValue(int key);
+	
+	/*   Erase value    */
+
+	void Erase(int key);
 
 	/*    List Array    */
 	void ListArray();
+
+	/*    Empty LIst?  */
+	bool Empty();
 
 
 };
