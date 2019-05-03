@@ -6,16 +6,20 @@ int main()
 {
 	node *head_ptr = new node();
 
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < 5; i++)
 	{
-		head_ptr->PushFront(i + 1);
+		head_ptr->PushBack(i);
 	}
+	
+	
+
 
 	head_ptr->ListArray();
 
-	head_ptr->Erase(2);
+	head_ptr->AddBack(5, 100);
 
 	head_ptr->ListArray();
+
 
 
 

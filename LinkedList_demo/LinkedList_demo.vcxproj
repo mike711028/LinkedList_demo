@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AddBack.cpp" />
+    <ClCompile Include="AddBefore.cpp" />
     <ClCompile Include="demo.cpp" />
     <ClCompile Include="Empty.cpp" />
     <ClCompile Include="Erase.cpp" />

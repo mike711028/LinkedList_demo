@@ -59,5 +59,10 @@ public:
 	/*    Empty LIst?  */
 	bool Empty();
 
+	/*   Add Before    */
+	void AddBefore(int insert_node, int key);
+
+	/*   Add Back	   */
+	void AddBack(int insert_node, int key);
 
 };
