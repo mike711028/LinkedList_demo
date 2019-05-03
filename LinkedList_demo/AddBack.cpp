@@ -18,15 +18,18 @@ void node::AddBack(int insert_node, int key)
 		node *new_node = new node(key);
 		node *ptr = this->GetNodeNext();
 
+		// search for the address of the insert_node
 		for (int i = 0; i < insert_node - 1; i++)
 		{
 			ptr = ptr->GetNodeNext();
 		}
 
+		// the insert_node is the last node
 		if (ptr->GetNodeNext() == NULL)
 		{
 			this->PushBack(key);
 		}
+		// else
 		else
 		{
 			new_node->SetNodeNext(ptr->GetNodeNext());
